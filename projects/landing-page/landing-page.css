@@ -1,62 +1,95 @@
-* {
+html {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+    min-height: 100%;
+}
 
 .body{ 
-    height: 5000px;
-    width: auto;
+
 }
 
 .container{
     height: 100%;
     width: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.top{
-    height: 30%;
+.container-children{
+    flex: 1;
+    width: 100%;
+}
+
+#top{
     background-color: #1f2937;
 }
 
-.header{
+#top-content{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#header{
     flex-direction: row;
     display: flex;
     flex: 1;
 }
 
-.logo{
-    flex-basis: 20%;
+#logo{
     margin-left: 100px;
-    flex: 1;
+    align-items: top;
+    width: 100px;
+    font-size: 18px;
+    color: #F9FaF8;
 }
 
-.links{
-    flex-basis: 80%;
+#links{
+    flex-basis: 50%;
     flex-direction: row;
     display: flex;
-    margin-left: 400px;
-    justify-content: space-between;
-    margin-right: 50px;
+    margin-left: 250px;
+    margin-right: -50px;
+    padding-left: 20px;
+    justify-content: flex-end;
 }
 
 .link-items{
     width: 120px;
     height: auto;
     display: flex;
-    font-size: 18px;
+    font-size: 12px;
     color: #E5E7EB;
+    text-align: center;
 }
 
-.middle{
-    height: 30%;
+.about{
+    margin-left: 100px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #F9FaF8;
 }
 
-.bottom{
-    height: 30%;
+#about-content{
+    width: 250px;
+    font-size: 14px;
 }
 
-.footer{
-    height: 10%;
+#snoopy-pic{
+    margin-left: 300px;
+    margin-right: 50px;
+    width: 250px;
+    height: 220px;
+}
+
+#middle{
+}
+
+#lower{
+
+}
+#bottom{
+}
+
+#footer{
 }
 
