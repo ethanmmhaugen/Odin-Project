@@ -4,23 +4,23 @@ html {
 }
 
 .body{ 
-
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container{
-    height: 100%;
+    min-height: 100%;
     width: auto;
     display: flex;
     flex-direction: column;
 }
 
 .container-children{
-    flex: 1;
     width: 100%;
 }
 
 #top{
     background-color: #1f2937;
+    flex-basis: 30%;
 }
 
 #top-content{
@@ -32,7 +32,6 @@ html {
 #header{
     flex-direction: row;
     display: flex;
-    flex: 1;
 }
 
 #logo{
@@ -44,7 +43,7 @@ html {
 }
 
 #links{
-    flex-basis: 50%;
+    flex-basis: 60%;
     flex-direction: row;
     display: flex;
     margin-left: 250px;
@@ -77,20 +76,21 @@ html {
 #snoopy-pic{
     margin-left: 300px;
     margin-right: 50px;
-    width: 250px;
-    height: 220px;
+    width: stretch;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 #middle{
     display: flex;
     flex-direction: column;
+    flex-basis: 30%;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 25px;
     padding-bottom: 50px;
     width: auto;
     background-color: #F9FaF8;
-    height: 265px;
 }
 
 #middle-text{
@@ -104,6 +104,7 @@ html {
     flex-direction: row;
     gap: 20px;
     height: 150px;
+    justify-content: center;
 }
 
 .middle-pictures-content{
@@ -115,13 +116,13 @@ html {
 #lower{
     display: flex;
     flex-direction: column;
+    flex-basis: 30%;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 25px;
     padding-bottom: 50px;
     width: auto;
     background-color: #E5E7EB;
-    height: 300px;
 }
 
 #quote-container{
@@ -130,13 +131,13 @@ html {
 #bottom{
     display: flex;
     flex-direction: column;
+    flex-basis: 30%;
     padding-left: 75px;
     padding-right: 75px;
     padding-top: 25px;
     padding-bottom: 25px;
     width: auto;
     background-color: #F9FaF8;
-    height: 265px;
 }
 .call-to-action-container{
     background-color: #3882F6;
@@ -179,9 +180,11 @@ html {
     margin-top: 30px;
     margin-left: 75px;
     border-color: #F9FaF8;
+    margin-right: 20px;
 }
 
 #footer{
+    flex-basis: 10%;
     background-color: #1f2937;
     align-items: center;
 }
